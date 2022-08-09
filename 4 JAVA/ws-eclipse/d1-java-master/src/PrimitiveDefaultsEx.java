@@ -1,4 +1,3 @@
-package demo.basics;
 
 public class PrimitiveDefaultsEx {
 //	initialized by default
@@ -20,6 +19,7 @@ public class PrimitiveDefaultsEx {
 		System.err.println(object.floatvar);
 		System.err.println(object.doublevar);
 		System.err.println(object.charvar);
+//		"\u0000" "null character"
 		System.err.println(object.booleanvar);
 	}
 }
