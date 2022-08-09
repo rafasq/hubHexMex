@@ -3,3 +3,5 @@
 3. Take a color and print if it is a rainbow color.
 4. Use the 8 primitive types to store info and print them.
 5. Store the month names in an array and display the month using (1-12) in switch case.
+6. Create 3 dogs as separate objects.
+7. Strore the 3 dogs in an array.
