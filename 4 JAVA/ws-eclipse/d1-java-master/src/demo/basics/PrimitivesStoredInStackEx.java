@@ -1,4 +1,6 @@
-public class PrimitiveDefaultsEx {
+package demo.basics;
+
+public class PrimitivesStoredInStackEx {
 //	initialized by default
 //	byte bvar;
 //	short shortvar;
@@ -28,11 +30,5 @@ public class PrimitiveDefaultsEx {
 		System.err.println(object.charvar);
 //		"\u0000" "null character"
 		System.err.println(object.booleanvar);
-		method();
-	}
-
-	public static void method() {
-		byte bvar = 10;
-		System.err.println(bvar);
 	}
 }
