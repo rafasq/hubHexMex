@@ -1,6 +1,6 @@
 package demo.basics;
 
-public class PrimitivesStoredInStackEx {
+public class StoredInStackPrimitivesEx {
 //	initialized by default
 //	byte bvar;
 //	short shortvar;

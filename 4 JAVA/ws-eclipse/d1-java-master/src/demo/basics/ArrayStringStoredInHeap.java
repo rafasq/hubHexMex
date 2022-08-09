@@ -11,6 +11,7 @@ public class ArrayStringStoredInHeap {
 		name = "Rambo";
 		numArray = new int[]{2,3};
 		System.err.println(name);
+		//for each loop
 		for(int num : numArray ) {
 			System.err.println(num);
 		}
