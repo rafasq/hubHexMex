@@ -4,21 +4,19 @@ package demo.oops;
  * Attributes : breed, color, age, size
  * Behaviors : eat, sleep, bark, run, do tricks
  */
-public class ClassNObjectEx {
+public class ClassAndObjectEx {
 public static void main(String[] args) {
 //	in stack / reference
-	Dog dogReference = null;
-// in heap / instance
-	dogReference = new Dog();
-	dogReference.breed = "Chow Chow";
-	dogReference.age = 5;
-	dogReference.color = "golden brown";
-	dogReference.size = 'M';
-	System.err.println(dogReference.breed + "\t" + dogReference.age + "\t" + dogReference.color + "\t" + dogReference.size );
-	dogReference.runFast();
-	dogReference.eat();
-	dogReference.sleeps();
-	dogReference.tricks();
+	Dog chowchowDog = new Dog();
+	chowchowDog.breed = "Chow Chow";
+	chowchowDog.age = 5;
+	chowchowDog.color = "golden brown";
+	chowchowDog.size = 'M';
+	System.err.println(chowchowDog.breed + "\t" + chowchowDog.age + "\t" + chowchowDog.color + "\t" + chowchowDog.size );
+	chowchowDog.runFast();
+	chowchowDog.eat();
+	chowchowDog.sleeps();
+	chowchowDog.tricks();
 	
 	//create the other two dogs....
 }
