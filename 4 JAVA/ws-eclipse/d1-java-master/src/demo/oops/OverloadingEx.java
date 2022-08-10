@@ -8,9 +8,7 @@ public class OverloadingEx {
 		calculator.sum(5, 5,5);
 		calculator.sum(5.5f, 5.5f);
 	}
-	
 }
-
  class Calculator {
 	 // function overloading // multiple methods with same name but different arguments
 	 public void sum(int num1, int num2) {
