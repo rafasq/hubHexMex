@@ -7,8 +7,15 @@ public class OverridingEx {
 	}
 }
 
-class FTP {
+class STP {
 	public void trainingDetails() {
+		String trg = "Email writing, Cultural Sensitivity";
+		System.out.println("STP training soft skils " + trg);
+	}
+}
+class FTP extends STP{
+	public void trainingDetails() {
+		super.trainingDetails();
 		String trg = "Java,SQL,Angular";
 		System.out.println("FTP training tec " + trg);
 	}
