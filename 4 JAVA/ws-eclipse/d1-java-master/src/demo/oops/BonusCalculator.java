@@ -1,9 +1,15 @@
 package demo.oops;
-
+/**
+ * BonusCalculator calculates the bonus of employees
+ */
 public class BonusCalculator {
 	static int salary = 50;
 
-// param bonus / returns total
+/**
+ * Returns the total salary with bonus by accepting the bonus
+ * @param bonus Is the bonus of employee
+ * @return The total of salary and bonus
+ */
 	float calculateTotalSalary(float bonus) {
 		float total;
 		total  = salary + bonus;
