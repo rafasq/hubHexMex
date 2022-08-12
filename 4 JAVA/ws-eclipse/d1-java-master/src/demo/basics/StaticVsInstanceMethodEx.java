@@ -2,20 +2,25 @@ package demo.basics;
 
 public class StaticVsInstanceMethodEx {
 	public static void main(String[] args) {
-		testStaticMethod();
-
+		TestStatic.testStaticMethod();
 //	new keyword is used to create instance
-		StaticVsInstanceMethodEx object = new StaticVsInstanceMethodEx();
+		TestInstance object = new TestInstance();
 		object.testInstanceMethod();
 	}
 
+
+
+}
+
+class TestStatic {
 	public static void testStaticMethod() {
 		System.err.println("static method");
 	}
+}
 
+class TestInstance {
 	public void testInstanceMethod() {
 		System.err.println("instance method");
 
 	}
-
 }
