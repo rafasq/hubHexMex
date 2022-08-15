@@ -1,13 +1,28 @@
 package demo.collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class ArrayListEx {
     public static void main(String[] args) {
 
         //   array cannot be resized / fixed to 3
         String colors[] = {"red","green","blue"};
-        String colorsNew[] = {"red","green","blue","yellow"};
+        String colorsNewArray[] = {"red","green","blue","yellow"};
+
+//      Returns a fixed-size list backed by the specified array.
+//      (Changes to the returned list "write through" to the array.)
+//        List colorsNewList =  Arrays.asList(colorsNewArray);
+//        colorsNewList.set(0,"cyan");
+//        colorsNewList.add("blue");
+//        System.out.println(colorsNewList);
+
+//        ArrayList colorsNewList1 =  new ArrayList();
+//        Collections.addAll(colorsNewList1, colorsNewArray);
+//        colorsNewList1.add("blue");
+//        System.out.println(colorsNewList1);
 
 //    ArrayList Resizable-array implementation
         ArrayList colorsArrayList = new ArrayList();
