@@ -55,14 +55,15 @@ public class ArrayListEx {
         colorsArrayList.clear();
         System.out.println(colorsArrayList.isEmpty());
         colorsArrayList.add("red");
+        colorsArrayList.add(null);
         colorsArrayList.add("blue");
+        colorsArrayList.add(null);
         colorsArrayList.add("yellow");
       Object[] colorsArray =  colorsArrayList.toArray();
-
-        System.out.println(colorsArray);
         for(Object color : colorsArray) {
             System.out.print(color + " ");
         }
+        System.out.println(colorsArray);
         System.out.println();
         System.out.println(colorsArrayList.size());
         System.out.println(colorsArrayList);

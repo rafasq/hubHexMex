@@ -31,6 +31,11 @@ https://docs.oracle.com/javase/8/docs/api/index.html?overview-summary.html
 - The user can access elements by their integer index (position in the list), and search for elements in the list.
 - Unlike sets, lists typically allow duplicate elements. 
 
+:writing_hand: **_Set_**  
+
+- A collection that contains no duplicate elements.
+- at most one null element. 
+
 :book: **Classes**  
 
 :writing_hand: **_ArrayList_**  
