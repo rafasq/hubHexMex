@@ -24,7 +24,18 @@ public class ArrayListEx {
 //        colorsNewList1.add("blue");
 //        System.out.println(colorsNewList1);
 
+//        List listFromArray = Arrays.asList(colorsNewArray);
+//        ArrayList colorsArrayList = new ArrayList(listFromArray);
+//        ArrayList colorsArrayList = new ArrayList(Arrays.asList(colorsNewArray));
+//        ArrayList colorsArrayList = new ArrayList(Arrays.asList(colorsNewArray));
+//        ArrayList colorsArrayListTest = new ArrayList(Arrays.asList(colorsNewArray), Arrays.asList(colors));
+//        ArrayList colorsArrayListTest = new ArrayList(Arrays.asList(colorsNewArray));
+//        colorsArrayListTest.addAll(Arrays.asList(colors));
+//      System.out.println(colorsArrayListTest);
+
+
 //    ArrayList Resizable-array implementation
+
         ArrayList colorsArrayList = new ArrayList();
 //        boolean added = false;
 //        added = colorsArrayList.add("red");
