@@ -6,6 +6,8 @@ public class SelectStatementEx {
     public static void main(String[] args) {
         //add mysql-connector-java-8.0.27 to project
         Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
         try {
             //load the driver // handle ClassNotFoundException.
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -17,10 +19,10 @@ public class SelectStatementEx {
             String selectQuery = "SELECT ACTOR_ID, FIRST_NAME, LAST_NAME FROM ACTOR WHERE ACTOR_ID < 6";
             // statement
             System.out.println("Query created");
-            Statement selectStatement = connection.createStatement();
+            statement  = connection.createStatement();
             System.out.println("query executed");
             // execute query on statement / get ResultSet
-            ResultSet resultSet = selectStatement.executeQuery(selectQuery);
+             resultSet = statement.executeQuery(selectQuery);
             System.out.println("iterate resultset");
             // iterate
             while(resultSet.next()) {
@@ -42,6 +44,8 @@ public class SelectStatementEx {
         finally {
             System.out.println("close connection");
             try {
+                resultSet.close();
+                statement.close();
                 connection.close();
             } catch (SQLException e) {
                 System.out.println("failed closing con");
