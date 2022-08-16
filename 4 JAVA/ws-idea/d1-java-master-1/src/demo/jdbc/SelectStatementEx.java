@@ -4,6 +4,11 @@ import java.sql.*;
 
 public class SelectStatementEx {
     public static void main(String[] args) {
+        useSakla();
+        System.out.println("***************");
+        useHR();
+    }
+    private static void useSakla() {
         //add mysql-connector-java-8.0.27 to project
         Connection connection = null;
         Statement statement = null;
@@ -40,6 +45,49 @@ public class SelectStatementEx {
             System.out.println("Driver not found");
         } catch (SQLException e) {
             System.out.println("Connect failed..");
+        }
+        finally {
+            System.out.println("close connection");
+            try {
+                resultSet.close();
+                statement.close();
+                connection.close();
+            } catch (SQLException e) {
+                System.out.println("failed closing con");
+            }
+        }
+    }
+    private static void useHR() {
+        //add mysql-connector-java-8.0.27 to project
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+        try {
+            //load the driver // handle ClassNotFoundException.
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("Driver loaded.");
+//            connect
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/HR","root","mysql");
+//          query
+            System.out.println("connected");
+            String selectQuery = "SELECT COUNTRY_ID, COUNTRY_NAME FROM COUNTRIES WHERE COUNTRY_ID LIKE 'Z%'";
+            // statement
+            System.out.println("Query created");
+            statement  = connection.createStatement();
+            System.out.println("query executed");
+            // execute query on statement / get ResultSet
+            resultSet = statement.executeQuery(selectQuery);
+            System.out.println("iterate resultset");
+            // iterate
+            while(resultSet.next()) {
+                String countryId =   resultSet.getString(1);
+                String countryName = resultSet.getString(2);
+                System.out.println(countryId + "\t" + countryName );
+            }
+        } catch (ClassNotFoundException e) {
+            System.out.println("Driver not found");
+        } catch (SQLException e) {
+            System.out.println("Connect failed.." + e);
         }
         finally {
             System.out.println("close connection");
