@@ -11,3 +11,28 @@ public static void main(String[] args) {
 class Test {
 	final String boilingTemperature = "100 degree celcius";
 }
+final class TFinal {
+
+}
+//class TDerived extends  TFinal {
+//
+//}
+
+class Base {
+	public  void bm(){
+
+	}
+	public final  void fbm(){
+
+	}
+}
+class Derived extends  Base {
+	@Override
+	public  void bm(){
+
+	}
+//	'fbm()' cannot override 'fbm()' in 'demo.basics.Base'; overridden method is final
+//	public   void fbm(){
+//
+//	}
+}
