@@ -54,6 +54,16 @@ public class CallableStatementEx {
                 String category = resultSet.getString(3);
                 System.out.println(title + "\t" + language + "\t" + category );
             }
+         ResultSetMetaData resultSetMetaData =  resultSet.getMetaData();
+            System.out.println(resultSetMetaData.getColumnCount());
+            System.out.println(resultSetMetaData.getColumnName(1));
+            System.out.println(resultSetMetaData.getColumnName(2));
+            System.out.println(resultSetMetaData.getColumnName(3));
+
+            DatabaseMetaData databaseMetaData = connection.getMetaData();
+            System.out.println(databaseMetaData.getDatabaseProductName());
+            System.out.println(databaseMetaData.getDriverName());
+            System.out.println(databaseMetaData.getUserName());
         } catch (ClassNotFoundException e) {
             System.out.println("Driver not found");
         } catch (SQLException e) {
