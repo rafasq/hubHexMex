@@ -62,3 +62,40 @@ result = 'positive' if n > 0 else 'negative'
 print(result)
 
 print(len('welcome'))
+
+message = "Today is  {day} and we are learning Python".format(day="Thursday")
+print(message)
+
+message = "Today is  {day} and we are learning {language}".format(day="Thursday", language ='Python')
+print(message)
+
+message = "Today is  {0} and we are learning {1}".format("Friday",'PyCharm')
+print(message)
+
+message = "{1} was learnt on {0}".format("Friday",'PyCharm')
+print(message)
+
+num = 20;
+if num > 10:
+    print("{} is greater than 10".format(num))
+
+if num%2 == 0:
+    print("Even")
+    if num > 10:
+        print("{} is greater than 10".format(num))
+else:
+    print("Odd")
+
+color = "yellow"
+if color == 'green':
+    print("leaves")
+elif color == 'red':
+    print("roses")
+elif color == 'blue':
+    print('sky')
+else:
+    print ('a new color')
+
+foodItems = ['pizza', 'coke', 'apples']
+for foodItem in foodItems:
+    print(foodItem, len(foodItem))
