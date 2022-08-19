@@ -139,3 +139,19 @@ match color:
         print('sun flower\'s are yellow')
     case _:
         print("sorry, we don't have this color item....")
+
+# math module
+import math
+result = math.floor(1.7)
+print(result)
+import os
+print(os.name)
+import platform
+print(platform.uname())
+import random
+print(random.random())
+import re
+pattern = re.compile("o")
+print(pattern.match("orange"))
+print(pattern.match("orange",2))
+print(pattern.match("orangeo",6))
