@@ -1,5 +1,4 @@
 package demo.basics;
-
 public class PrimitiveDataTypes {
 
 	

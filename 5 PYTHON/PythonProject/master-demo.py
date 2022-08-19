@@ -99,3 +99,43 @@ else:
 foodItems = ['pizza', 'coke', 'apples']
 for foodItem in foodItems:
     print(foodItem, len(foodItem))
+
+# break / continue
+
+message = "welcome to mexico! have a great ... time!"
+for alphabet in message:
+    # print(alphabet)
+    if alphabet == '.' or alphabet =='!':
+        break
+        # print(alphabet)
+    else:
+        print(alphabet, end='')
+
+# print(); print("exited the loop")
+print("\nexited the loop\n")
+
+message = "welcome to mexico!!! have a great ... time!"
+for alphabet in message:
+    # print(alphabet)
+    if alphabet == '.' or alphabet =='!':
+        continue
+    else:
+        print(alphabet, end='')
+        # print(alphabet)
+print("\texited the loop")
+
+print("Saul's computer")
+print('Saul\'s computer')
+
+#  match ... case
+color = 'black'
+print(color)
+match color:
+    case 'red':
+        print('roses are red')
+    case 'green':
+        print('chillies are green')
+    case 'yellow':
+        print('sun flower\'s are yellow')
+    case _:
+        print("sorry, we don't have this color item....")

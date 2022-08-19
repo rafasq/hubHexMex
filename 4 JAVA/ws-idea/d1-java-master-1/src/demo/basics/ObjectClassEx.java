@@ -16,4 +16,9 @@ class TestClass  {
     public String toString() {
         return message;
     }
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("clean up operations like closing connections....");
+    }
 }
