@@ -199,6 +199,7 @@ print(Cal.sum(10,20))
 
 # import names directly
 from Cal import avg, sum
+# print calls avg
 print(avg(10,20))
 print(sum(10,20))
 
@@ -249,3 +250,89 @@ s1 = Session("Python "," classes / objects")
 print(s1.subj)
 print(s1.topi)
 s1.disp();
+
+def avg1(n1,n2) :
+    result = (n1+n2)/2
+    print(result)
+    return result
+
+resultFromAvg1 = avg1(10,30)
+print(resultFromAvg1)
+
+
+# Access Specifiers
+class Employee:
+    # constructor
+    def __init__(self,name, age):
+        # public data members
+        self.name = name
+        self.age = age
+
+        # public member function
+    def display(self):
+    #     access public data members
+        print(self.name + " " + str(self.age))
+
+#        create object
+emp = Employee("sam",20)
+# access public data members
+print(emp.name)
+print(emp.age)
+# access public member function
+emp.display()
+
+
+# protected
+class Employee:
+    # constructor
+    def __init__(self,name, age):
+        # protected data members
+        self._name = name
+        self._age = age
+
+        # protected member function
+    def _display(self):
+        print("Base : " + self._name + " " + str(self._age))
+
+class FullTimeEmployee(Employee):
+    def __init__(self,name, age):
+        Employee.__init__(self,name,age)
+
+    def displayD(self):
+    #     access protected data members
+        print("From Base : " + self._name + " " + str(self._age))
+    # access protected member function
+        self._display()
+
+#        create object
+emp = FullTimeEmployee("samuel",200)
+# access public data members
+emp.displayD()
+
+
+# private access specifier
+class Employee:
+    # constructor
+    def __init__(self,name, age):
+        # public data members
+        self.__name = name
+        self.__age = age
+
+        # public member function
+    def __display(self):
+    #     access public data members
+        print(self.__name + " " + str(self.__age))
+
+    def accessPrivate(self):
+    #     access protected data members
+        print("Private : " + self.__name + " " + str(self.__age))
+    # access protected member function
+        self.__display()
+#        create object
+emp = Employee("sams",250)
+# access public data members
+# print(emp.__name)
+# print(emp.  __age)
+# access public member function
+# emp.__display()
+emp.accessPrivate();
