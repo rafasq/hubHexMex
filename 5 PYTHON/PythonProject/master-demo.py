@@ -1,11 +1,4 @@
 # variable scopes
-# 1. local scope
-def f():
-    # exists only withing fun
-    v=False
-
-#     NameError: name 'v' is not defined
-# print(v)
 
 for i in range(1,11):
     print(i)
@@ -155,3 +148,104 @@ pattern = re.compile("o")
 print(pattern.match("orange"))
 print(pattern.match("orange",2))
 print(pattern.match("orangeo",6))
+
+import sys
+print(sys.version)
+
+# FUNCTIONS
+def fun() :
+    print("Fun with python functions.....")
+fun()
+print('**********')
+def fun(lang) :
+    """Fun function which accepts lang as param"""
+    print("Fun with " + lang + " functions.....")
+fun("Java")
+fun("JavaScript")
+fun("Python")
+
+# keyword arguments
+def fun(lang1, lang2, lang3) :
+    print("Lang 1 : " + lang1)
+    print("Lang 2 : " + lang2)
+    print("Lang 3 : " + lang3)
+fun(lang2="java", lang1='sql', lang3='python')
+
+# non-keyword arguments
+def fun(*argv) :
+    print(argv)
+    for arg in argv:
+        print(arg)
+fun("java", 'sql', 'python')
+
+def fun(learner, *subjects) :
+    print(learner)
+    for subject in subjects:
+        print(subject)
+fun("James Bond", "java", 'sql', 'python')
+
+# keyword arguments
+print("keyword arguments")
+def fun(**kwargs) :
+    print(kwargs)
+    for key,value in kwargs.items():
+        print("%s = %s" % (key,value))
+fun(lang2="java", lang1='sql', lang3='python')
+
+#modules
+import Cal
+print(Cal.avg(10,20))
+print(Cal.sum(10,20))
+
+# import names directly
+from Cal import avg, sum
+print(avg(10,20))
+print(sum(10,20))
+
+# class / object
+class Test:
+    var = 10
+# create object
+object = Test()
+print(object.var)
+
+# cons
+class Session:
+    def __init__(self, sub, top):
+        self.sub = sub;
+        self.top = top;
+s1 = Session("Python","classes / objects")
+print(s1.sub)
+print(s1.top)
+
+class Session:
+    def __init__(self, sub, top):
+        self.subj = sub;
+        self.topi = top;
+s1 = Session("Python 1"," 1 classes / objects")
+print(s1.subj)
+print(s1.topi)
+
+# methods
+class Session:
+    def __init__(self, sub, top):
+        self.subj = sub;
+        self.topi = top;
+    def disp(self):
+        print(" Subject is " + self.subj + " topic is " + self.topi)
+s1 = Session("Python "," classes / objects")
+print(s1.subj)
+print(s1.topi)
+s1.disp();
+
+print("self renamed")
+class Session:
+    def __init__(Agripino, sub, top):
+        Agripino.subj = sub;
+        Agripino.topi = top;
+    def disp(pikachu):
+        print(" Subject is " + pikachu.subj + " topic is " + pikachu.topi)
+s1 = Session("Python "," classes / objects")
+print(s1.subj)
+print(s1.topi)
+s1.disp();
