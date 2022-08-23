@@ -141,6 +141,7 @@ javaTrg.trgDetails()
 
 print('*******************')
 class JavaTrg:
+    #constructors are like methods, but they are called when creating an object
     def __init__(self,trgId, trgName):
         self.trgId = trgId
         self.trgName = trgName
