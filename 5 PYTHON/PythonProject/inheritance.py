@@ -109,3 +109,68 @@ obj.baseM()
 obj.der1M()
 obj.der2M()
 obj.der3M()
+
+# polymorphism
+print(len("Mexico"))
+print(len([2,3,7,8]))
+result = len('Mexico')
+print(result)
+# arithmetic
+print(1+1)
+print("1" + "1")
+print("there are " + str(3) + ' roses in the garden')
+
+# class polymorphism / 2 methods with same name but different classes
+class PythonTrg:
+    def __init__(self,trgId, trgName):
+        self.trgId = trgId
+        self.trgName = trgName
+    def trgDetails(self):
+        print("Python Training id ", self.trgId, " Training Name : " + self.trgName)
+
+class JavaTrg:
+    def __init__(self,trgId, trgName):
+        self.trgId = trgId
+        self.trgName = trgName
+    def trgDetails(self):
+        print("Java Training id ", self.trgId, " Training Name : " + self.trgName)
+pythonTrg = PythonTrg(1,"py gaming")
+javaTrg = JavaTrg(2,"java gaming")
+pythonTrg.trgDetails()
+javaTrg.trgDetails()
+
+print('*******************')
+class JavaTrg:
+    def __init__(self,trgId, trgName):
+        self.trgId = trgId
+        self.trgName = trgName
+    def trgDetails(self):
+        print("Java Training id ", self.trgId, " Training Name : " + self.trgName)
+    # def trgDetails(self,trgVenue):
+    #     print("Java Training id ", self.trgId, " Training Name : " + self.trgName)
+# parameterized constructor - JavaTrg(2,"java gaming")
+javaTrg = JavaTrg(2,"java gaming")
+javaTrg.trgDetails()
+# javaTrg = JavaTrg(2,"java gaming","mexico")
+# javaTrg.trgDetails()
+
+# method overriding
+class Customer:
+    def det(self):
+        print("cus det")
+class Order(Customer):
+    def det(self):
+        print("ord det")
+#default constructor of Customer class / Customer()
+c = Customer()
+c.det()
+o = Order()
+o.det()
+
+# empty class in python
+class A:
+    pass
+class B:
+    pass
+class C(A,B):
+    pass
