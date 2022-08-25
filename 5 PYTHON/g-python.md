@@ -1,6 +1,7 @@
 :books: **INTRODUCTION**  
 
 https://www.pythoncheatsheet.org/cheatsheet/basics
+https://medium.com/pythoneers/python-inheritance-types-illustrated-with-code-5becad2323ec
 
 :books: **Functions**  
 

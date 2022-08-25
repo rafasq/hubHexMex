@@ -26,3 +26,28 @@ else :
 finally :
     print('always gets executed')
 print('executes?')
+
+print("CUSTOM EXCEPTION")
+# custom exception
+class SalaryError(Exception):
+    # constructor or initializer
+    def __init__(self,salary):
+        self.salary = salary
+# test
+try:
+    salary = 3000
+    if salary > 50000:
+        raise SalaryError(salary)
+except SalaryError as errorObject:
+    print('A new exception occured : ', errorObject.salary)
+
+
+# CREATE EXCEPTION
+class MyCustomException(Exception):
+    pass
+# RAISE EXCEPTION
+raise MyCustomException('A custom message for my custom exception')
+try:
+    raise MyCustomException('A custom message for my custom exception')
+except MyCustomException:
+    print('My custom exception was raised')

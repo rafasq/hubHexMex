@@ -192,7 +192,7 @@ def fun(**kwargs) :
         print("%s = %s" % (key,value))
 fun(lang2="java", lang1='sql', lang3='python')
 
-#modules
+#modules : contains classes, functions and vairables.
 import Cal
 print(Cal.avg(10,20))
 print(Cal.sum(10,20))
