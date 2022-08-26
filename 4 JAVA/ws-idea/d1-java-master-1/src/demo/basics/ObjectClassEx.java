@@ -1,5 +1,5 @@
 package demo.basics;
-
+// Object toString(), wait(), notify(), equals(), clone()
 public class ObjectClassEx {
     public static void main(String[] args) {
         TestClass testClassObject = new TestClass();

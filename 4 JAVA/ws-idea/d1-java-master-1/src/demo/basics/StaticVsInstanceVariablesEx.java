@@ -33,8 +33,11 @@ public class StaticVsInstanceVariablesEx {
 
 class Employee {
 //	static / belongs to class
+	// common value for all the classes
 	public static String companyName = "The Amazing Company";
 //	intance variable / belongs to instance
+	// instance / belongs to instance
+	// different values for each instance
 	public String employeeName;
 	public String clientName;
 	

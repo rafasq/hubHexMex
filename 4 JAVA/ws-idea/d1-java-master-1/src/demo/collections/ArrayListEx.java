@@ -1,13 +1,22 @@
 package demo.collections;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
+import java.util.*;
 public class ArrayListEx {
     public static void main(String[] args) {
+        // allows duplicates, unsorted, allows nulls, fastest list in storing and accessing data
+List arrayList = new ArrayList();
+//arrayList.add(null);
+        arrayList.add("pup");
+//arrayList.add(null);
+        arrayList.add("dup");
+        arrayList.add("cup");
+        System.out.println(arrayList);
 
+//        Arrays.sort(arrayList); //no
+        Collections.sort(arrayList); // yes
+        System.out.println(arrayList);
+// ArrayList is not synchronized, not thread-safe
+//        Vector is synchronized , thread safe.
         //   array cannot be resized / fixed to 3
         String colors[] = {"red","green","blue"};
         String colorsNewArray[] = {"red","green","blue","yellow"};

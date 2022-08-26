@@ -9,8 +9,11 @@ public static void main(String[] args) {
 }
 
 class Test {
+//	final variable value cannot be changed
 	final String boilingTemperature = "100 degree celcius";
 }
+
+// final class cannot be inherited
 final class TFinal {
 
 }
@@ -22,6 +25,7 @@ class Base {
 	public  void bm(){
 
 	}
+//	cannot be overridden
 	public final  void fbm(){
 
 	}

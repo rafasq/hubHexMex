@@ -1,7 +1,21 @@
 package demo.basics;
 
+//import java.util.Arrays;
+
+import java.util.Arrays;
+
 public class ArrayEx {
 	public static void main(String[] args) {
+		// linear, homogenous, static
+		int num[] = {5,2,1,55};
+//		1, 2, 5, 22, 55
+		java.util.Arrays.sort(num);
+		for(int n : num)
+		{
+			System.out.println(n);
+		}
+		int index = Arrays.binarySearch(num,7);
+		System.out.println("Index :" + index);
 		// declaration & initialization (0's)
 //		int number;
 //		number = number * number;

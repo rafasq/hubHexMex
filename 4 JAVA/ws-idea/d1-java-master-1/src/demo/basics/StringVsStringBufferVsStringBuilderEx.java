@@ -8,6 +8,7 @@ public class StringVsStringBufferVsStringBuilderEx {
 //		concatStringBuilder();
 	}
 	private static void stringMethods() {
+		// String is immutatble
 String message = "All is well!";
 		System.out.println(message.endsWith("!"));
 		System.out.println(message.indexOf("well"));

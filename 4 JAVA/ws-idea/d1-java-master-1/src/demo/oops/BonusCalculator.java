@@ -2,6 +2,8 @@ package demo.oops;
 /**
  * BonusCalculator calculates the bonus of employees
  */
+
+//concrete class / class
 public class BonusCalculator {
 	static int salary = 50;
 

@@ -42,3 +42,44 @@ class SmartPhone1 implements Mobile1 {
 		System.out.println("watch youtube");
 	}
 }
+// class implement interface
+interface TestInterface {
+//	default public in interface
+	void testMethod();
+}
+// class implements interface
+class TestClass implements  TestInterface {
+	// public access to override
+	public void testMethod() {
+	}
+}
+
+
+// class _________ class / extends
+// class ________ interface / implements
+// interface ________ interface / extends
+// interface  ________  class / nothing like that
+
+
+//interface
+// interface cannot extend class
+// interface can extend interface
+// interface cannot implement interface
+// class cannot interface
+class TestClass1 {}
+//interface Test5 extends TestClass1{
+//
+//}
+
+interface i1 {}
+interface i2 extends i1{}
+//interface i2 implement i1{}
+
+class Vehicle {
+
+}
+// Car IS-A a Vehcle
+// THE INHERITANCE  = IS-A relationship
+class Car extends Vehicle {
+
+}

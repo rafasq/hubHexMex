@@ -4,6 +4,7 @@ public class AbstractClassEx {
 	public static void main(String[] args) {
 		Mobile mobileObject = null;
 //		Cannot instantiate the type Mobile
+		//abstract class cannot be instantiatedpu
 //		mobileObject = new Mobile();
 //		base class object points to derived class instance.
 		mobileObject = new SmartPhone();
@@ -36,3 +37,14 @@ class SmartPhone extends Mobile {
 		
 	}
 }
+
+abstract class Test5 {
+// abstract methods can be in abstract class
+//	end with semicolon
+abstract void abstactM();
+}
+
+//class Test51 {
+//	// abstract methods cannot be in non-abstract class
+//	abstract void abstactM();
+//}

@@ -25,3 +25,29 @@ class ADM extends Training {
 //		System.out.println("Training name " + tname);
 //	}
 }
+
+class Test {
+//	instance method / default access
+	 public void testM() {
+		System.out.println("testM");
+	}
+}
+class TestDerived extends Test {
+//	compilation error
+//	 void testM(){
+//
+//	}
+
+//	2 methods , 1 from base class and another below
+	public	 void testM(){
+	}
+}
+
+abstract class Test7 {
+  abstract void testMethod();
+}
+class Test9 extends Test7 {
+//	override the abstract method
+	void testMethod() {
+	}
+}

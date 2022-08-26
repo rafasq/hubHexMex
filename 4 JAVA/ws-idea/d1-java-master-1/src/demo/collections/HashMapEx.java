@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class HashMapEx {
     public static void main(String[] args) {
+
+        // Synchronized / thread safe : Hashtable
+        // Not Synchronized / not thread safe : HashMap
 //        Raw types / K & V as Objects
         Map countryCodesMap = new HashMap();
         Float floatVar = 52.55f;

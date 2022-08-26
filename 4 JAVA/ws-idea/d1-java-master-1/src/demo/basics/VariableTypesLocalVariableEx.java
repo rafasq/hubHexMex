@@ -14,4 +14,16 @@ public class VariableTypesLocalVariableEx {
 		int x = 100;
 		System.err.println(x);
 	}
+// instance
+	int y;
+//	static
+	static int yy;
+}
+
+class Test5 {
+//	constructor / same name of class
+	Test5() {
+//	local /declared inside constructor
+		int x = 500;
+	}
 }
