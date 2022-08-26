@@ -1,9 +1,32 @@
 # variable scopes
+food = {
+    "name" : 'icecream',
+    "type" : 'cool'
+}
+print(food['name'])
 
+import math
+print(math.floor(5.5))
 for i in range(1,11):
+    if i>5:
+        break
     print(i)
 # loop block does not create local scope
-print(i)
+# print(i)
+
+testmail = "tester@test.com"
+list = testmail.split('@')
+print(list)
+print(list[1])
+
+message=" wel go "
+print(len(message))
+result = message.strip()
+print(len(result))
+
+l2 = ["orange",'apple', 'green']
+for color in l2:
+    print(color)
 
 is_python_amazing = True
 if is_python_amazing:
@@ -43,6 +66,10 @@ print(s1.union(s2))
 
 l1 = ['red','green','blue']
 l2 = ["orange",'apple', 'green']
+
+for color in l1:
+    print(color)
+
 setFromList = set(l1)
 print(setFromList)
 
@@ -204,11 +231,16 @@ print(avg(10,20))
 print(sum(10,20))
 
 # class / object
+
+
 class Test:
     var = 10
+    def method(self,x):
+        print(x)
 # create object
 object = Test()
-print(object.var)
+object.method(50)
+# print(object.var)
 
 # cons
 class Session:
@@ -336,3 +368,6 @@ emp = Employee("sams",250)
 # access public member function
 # emp.__display()
 emp.accessPrivate();
+
+
+
