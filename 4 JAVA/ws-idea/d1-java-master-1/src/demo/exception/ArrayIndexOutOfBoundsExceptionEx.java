@@ -28,3 +28,5 @@ public class ArrayIndexOutOfBoundsExceptionEx {
 	}
 
 }
+
+// ArrayIndexOutOfBoundsException : WHEN THE INDEX IS OUT OF BOUNDS/ RANGE

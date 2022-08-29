@@ -33,11 +33,11 @@ class Product extends Object {
 //public final void notify(){
 //
 //}
-	@Override
-public int hashCode()
-{
 
-}
+// public int hashCode()
+// {
+
+// }
 @Override
 	protected Object clone() throws CloneNotSupportedException {
 		return super.clone();

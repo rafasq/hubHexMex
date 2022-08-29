@@ -38,10 +38,23 @@ class SmartPhone extends Mobile {
 	}
 }
 
-abstract class Test5 {
+abstract class Base5 {
 // abstract methods can be in abstract class
 //	end with semicolon
-abstract void abstactM();
+public abstract void abstactM();
+
+}
+
+class Derived5 extends Base5 {
+// ACCESS SHOULD NOT BE REDUCED
+// HIGHEST TO LOWEST VISIBILITY ( PUBLIC , PROTECTED, DEFAULT, PRIVATE)
+	@Override
+	public void abstactM() {
+		
+	}
+	public void abstactM(String test) {
+		
+	}
 }
 
 //class Test51 {

@@ -60,11 +60,16 @@ class SmartPhone1 implements Mobile1 {
 // class implement interface
 interface TestInterface {
 //	default public in interface
+// BY DEFAULT PUBLIC
 	void testMethod();
 }
 // class implements interface
 class TestClass implements  TestInterface {
-	// public access to override
+	// DEFAULT ACCESS
+	// @Override
+	//  void testMethod() {
+	// }
+		@Override
 	public void testMethod() {
 	}
 }
