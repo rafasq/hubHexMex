@@ -1,4 +1,17 @@
 package demo.oops;
+// RELATIONSHIPS
+// class _______________ class / extends
+// abstract class _______ class / extends
+// interface ________ interface / extends
+// class ___________ interface / implements
+// interface ________ class / no relationship
+
+// ERROR
+// class implements class
+// interface implements interface
+// interface extends class
+// class extends interface
+// abstract class cannot be instantiated
 
 public class InterfaceEx {
 	public static void main(String[] args) {

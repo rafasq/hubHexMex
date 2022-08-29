@@ -2,6 +2,9 @@ package demo.collections;
 
 import java.util.*;
 public class ArrayListEx {
+//    THREAD SAFE IS ALSO CALLED AS SYNCHRONIZED
+//    SYNCHRONIZED : VECTOR, HASHTABLE, CONCURRENTHASHMAP
+    // NOT SYNCHRONIZED ALSO CALLED AS NON THREAD SAFE : ARRAYLIST, HASHSET....
     public static void main(String[] args) {
         // allows duplicates, unsorted, allows nulls, fastest list in storing and accessing data
 List arrayList = new ArrayList();

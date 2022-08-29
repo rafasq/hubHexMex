@@ -18,10 +18,40 @@ class Product extends Object {
 //class Product {
 	String name = "Pen";
 	int price = 5;
+// garbage collection
+//	@Override
+//	protected void finalize() throws Throwable {
+//		super.finalize();
+//	}
+// multi-threading
+	//	public final void wait()
+//			throws InterruptedException
+//	{
+//
+//	}
+//	multi-threading
+//public final void notify(){
+//
+//}
+	@Override
+public int hashCode()
+{
+
+}
+@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
 
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Name " + name + " Price " + price;
 	}
+
 }

@@ -9,6 +9,9 @@ public class FinalEx2 {
 }
 
 final class Training1 {
+//	final variables has to be initialized
+//	final variables values cannot be changed
+	final String place = "Mexico";
 	int tid = 10;
 	String tname = "Java";
 
