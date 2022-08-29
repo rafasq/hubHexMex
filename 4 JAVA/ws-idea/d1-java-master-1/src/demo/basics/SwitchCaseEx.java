@@ -14,7 +14,7 @@ public class SwitchCaseEx {
 //			break;
 		case "FALL":
 			System.out.println("FALL");
-			break;
+//			break;
 		case "WINTER":
 			System.out.println("WINTER");
 			break;

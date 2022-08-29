@@ -26,7 +26,9 @@ interface Mobile1 {
 //		System.out.println("98.3 fm");
 //	}
 }
-
+// Animals > Aquatic
+// Animals >Terrestrial
+// Flyer fly() > Ball, Bird, Rocket
 class SmartPhone1 implements Mobile1 {
 	@Override
 	public void calling() {

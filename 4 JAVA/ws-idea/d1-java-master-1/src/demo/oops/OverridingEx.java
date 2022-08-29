@@ -2,8 +2,10 @@ package demo.oops;
 
 public class OverridingEx {
 	public static void main(String[] args) {
-		Competency com = new Competency();
-		com.trainingDetails();
+		STP stp = new FTP();
+		stp.trainingDetails();
+//		Competency com = new Competency();
+//		com.trainingDetails();
 	}
 }
 
@@ -14,11 +16,12 @@ class STP {
 	}
 }
 class FTP extends STP{
-	public void trainingDetails() {
-		super.trainingDetails();
-		String trg = "Java,SQL,Angular";
-		System.out.println("FTP training tec " + trg);
-	}
+//	@Override
+//	public void trainingDetails() {
+////		super.trainingDetails();
+//		String trg = "Java,SQL,Angular";
+//		System.out.println("FTP training tec " + trg);
+//	}
 }
 
 class Competency extends FTP {
