@@ -6,6 +6,11 @@ package demo.oops;
 // class ___________ interface / implements
 // interface ________ class / no relationship
 
+// interface can extend class / false
+// interface can extend interface / true
+// interface can implement interface / false
+// class can extend interface / false
+
 // ERROR
 // class implements class
 // interface implements interface

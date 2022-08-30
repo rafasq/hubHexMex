@@ -33,6 +33,23 @@ class Test:
 o=Test()
 o.method1(20)
 
+# v = 10 -------------------------
+class Test:
+    v = 10
+    def method1(self,v):
+        print(v)
+o=Test()
+o.method1(20)
+
+# v = 20  (with constructor)-------------------------
+class Test:
+    v = 10
+    def __init__(self,v):
+        self.v=v
+    def method1(self):
+        print(self.v)
+o=Test(20)
+o.method1()
 # ball -------------------
 product = {
     "name" : "pen",

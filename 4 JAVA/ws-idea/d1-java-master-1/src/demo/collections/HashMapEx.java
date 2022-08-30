@@ -27,7 +27,7 @@ public class HashMapEx {
         countryCodesMap1.put(81, "Japan");
         System.out.println(countryCodesMap1);
         System.out.println(countryCodesMap1.size());
-        // search
+        // get the value using a key // get method
         String country = countryCodesMap1.get(52);
         System.out.println(country);
         System.out.println(countryCodesMap1.get(53));
