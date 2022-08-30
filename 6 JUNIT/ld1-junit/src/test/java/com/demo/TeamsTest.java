@@ -3,10 +3,12 @@ package com.demo;
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TeamsTest {
     String session = "Junit Testing";
     String day = "Tuesday";
+//    String day = null;
     Teams teams = new Teams();
     //    executed once in the beginning
     @BeforeClass
@@ -22,6 +24,7 @@ public class TeamsTest {
     @Test
     public void testSession() {
 //        Assert.assertEquals("Hello World!!", messageUtil.printMessage());
+        assertNotNull(day);
         assertEquals("Junit Testing", teams.participantAttendSession());
         System.out.println("attend session");
     }
